@@ -26,7 +26,7 @@ const Body = () => {
 
   function add(val, key) {
     Input.forEach((ele) => {
-      if (ele.id == key) {
+      if (ele.id === key) {
         let a = parseInt(val);
         ele.value = a;
       }
@@ -47,7 +47,7 @@ const Body = () => {
     let Loss = 0;
     let Losspercent = 0;
 
-    if (Initial == Current) {
+    if (Initial === Current) {
       setAns("No Pain No Gain & No Gain No Pain");
     } else if (Initial > Current) {
       Loss = Initial - Current;
@@ -74,10 +74,10 @@ const Body = () => {
     let Initial = 0;
     let Current = 0;
     Input.forEach((ele) => {
-      if (ele.id == "Initial") {
+      if (ele.id === "Initial") {
         Initial = ele.value;
       } else {
-        if (ele.id == "Current") {
+        if (ele.id === "Current") {
           Current = ele.value;
         }
       }
